@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.row {  
+    clear: both;
+}  
+[class*="col-"] { 
+    min-height: 7px;
+    padding: 12px;
+    float: left;
+}
+.col-5 {
+    width: 20%;
+    text-align: center;
+    /*border: 1px solid gray;*/
+}
+
+[class*="col-"] 
+@media all and (max-width: 700px){ 
+  [class*="col-"] {
+    width: 100%
+  }
+}
+
+h1{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: rgba(128, 128, 128, 0.959);
+    padding: 50px;
+}
+h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 15px;
+}
+
+.fa-address-book{
+    font-size: 3em;
+    color: rgb(58, 16, 136);
+}
+.fa-align-right{
+    font-size: 3em;
+    color: rgb(58, 16, 136);
+}
+.fa-angle-double-down{
+    font-size: 3em;
+    color: rgb(58, 16, 136);
+}
+.fa-archive{
+    font-size: 3em;
+    color: rgb(58, 16, 136);
+}
+.fa-anchor{
+    font-size: 3em;
+    color: rgb(58, 16, 136);
+}
+h5{
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+}
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.col-5:hover{
+    background-color: rgb(123, 52, 255);
+    color: white;
+}
